@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: beige;
+}
+.profile-card{   
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    max-width:370px;
+    width: 100%;
+    background-color: beige;
+    box-shadow: 1px 1px 8px 2px gray ;
+    border-radius: 20px;
+    padding:25px;
+    position: relative;
+}
+.profile-card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:150px ;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    background-color: blueviolet;
+}
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+.image .profile-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid gray;
+}
+
+.profile-card .text-data{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    color: rgb(94, 31, 153);
+}
+
+.text-data .name{
+    font-size: 22px;
+    font-weight:500;
+}
+.text-data .job{
+    font-size: 18px;
+    font-weight:400;
+}
+
+.profile-card .media-icons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 15px;
+    
+}
+
+.media-icons .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 19px;
+    height:34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 0px 13px;
+    text-decoration: none;
+    background-color: darkgrey;
+}
+
+.profile-card .buttons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 25px;
+
+}
+
+.buttons .button{
+    background-color: rgb(165, 90, 236);
+    border: none;
+    color: aliceblue;
+    margin: 0 10px;
+    border-radius: 4px;
+    padding: 8px 24px;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.buttons .button:hover{
+    background-color:  rgb(255, 255, 255);
+    color:rgb(165, 90, 236);
+    font-weight: 700;
+}
+
+.profile-card .analytics{
+    display: flex;
+    align-items:center;
+    margin-top: 25px;
+    
+}
+.analytics .data{
+    display: flex;
+    align-items:center;
+    color: rgb(101, 42, 20);
+    padding: 0 20px;
+    border-right: 1px solid ;
+}
+.data i{
+    font-size: 18px;
+    margin-right: 7px;
+}
+.data:last-child{
+    border: none;
+}
